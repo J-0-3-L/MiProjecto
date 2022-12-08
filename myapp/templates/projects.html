@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>PROJECTS</p>
+
+{% for project in projects %}
+<h1>{{project.name}}</h1>
+<button>Delete</button>
+<button>Agregar</button>
+{% endfor %}
+{% endblock %}
+
